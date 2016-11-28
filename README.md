@@ -18,10 +18,12 @@ CPSC 473 assignment 6
 $ npm install
 
  2.- Run Web Api and app 
+ 
 $ node server.js
 
 
  3.- Access
+ 
 Go to browser and type localhost:3000
 
 
