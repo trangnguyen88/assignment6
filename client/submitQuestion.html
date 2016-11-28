@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+        <script src="contribute.js" ></script>
+        <title>Trivia API</title>
+    </head>
+    <body>
+        <header >
+             
+		<!-- Icon Bar (Sidenav - hidden on small screens) -->
+                 <nav class="w3-sidenav w3-padding-128 w3-margin-top w3-center w3-small w3-hide-small">
+
+                <!-- Avatar image in top left corner -->
+                <a class="w3-padding-large w3-hover-teal" href="index.html">
+                    <i class="fa fa-flag-checkered w3-xxlarge"></i>
+                    <p>Let's Start</p>
+                </a>
+                <a class="w3-padding-large w3-hover-teal" href="submitQuestion.html">
+                    <i class="fa fa-plus w3-xxlarge"></i>
+                    <p>Add Question</p>
+                </a>
+             </nav>
+        </header>
+
+        <main style="margin-left:20%">
+            <div class="w3-content w3-padding-64 w3-text-teal" id ="add-question-container">
+                 <h1 class="w3-jumbo">Contibute to Trivia</h1>
+                 <div class="add-question">
+                    <h2> Add new question</h2>
+                    <p><input class="w3-input w3-border w3-padding-16" id="question" type="text" placeholder="Question"></p>
+                    <p><input class="w3-input w3-border w3-padding-16" id="answer" type="text" placeholder="Answer"></p>
+                    <p><button class="w3-btn w3-teal w3-padding-large w3-hover-teal" id="submit-question">SUBMIT QUESTION!</button></p>
+                </div>
+                </div>
+              
+        </main>
+	<sidebar></sidebar>
+
+
+    </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+	<script src="http://knockoutjs.com/downloads/knockout-latest.js"></script>
+	<!--<script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.4.1.js"></script>-->
+
+	
+	<!--<script src='/bower_components/knockout/dist/knockout.js'></script>-->
+
+<!--  	<script src="client.js"></script>-->
+        <script src="play.js" ></script>
+        <title>Trivia API</title>
+    </head>
+    <body>
+        <header>
+            <!-- Icon Bar (Sidenav - hidden on small screens) -->
+             <nav class="w3-sidenav  w3-margin-top w3-center w3-small w3-hide-small">
+                <div class="fa fa-user w3-xlarge  w3-teal w3-text-white" aria-hidden="true" id="userList" >    
+			<select multiple="multiple" font-size="1px;" height="5" data-bind="options:allUsers" width="15"> </select>
+                </div>
+		
+                <!-- Avatar image in top left corner -->
+                <a class="w3-padding-large w3-hover-teal" href="#">
+                    <i class="fa fa-flag-checkered w3-xxlarge"></i>
+                    <p>Let's Start</p>
+                </a>
+                <a class="w3-padding-large w3-hover-teal" href="submitQuestion.html">
+                    <i class="fa fa-plus w3-xxlarge"></i>
+                    <p>Add Question</p>
+                </a>
+             </nav>
+
+        </header>
+        
+        <main style="margin-left:20%">
+            <div class="w3-content  w3-padding-64   w3-text-teal" id ="question-container">
+                <h1 class="w3-jumbo">Trivia Game</h1>
+                    <div class="question-container">
+                        
+                        <div class="w3-panel w3-teal w3-text-white w3-round-jumbo">
+                            <p class="w3-small" id= 'question' data-bind="text: question"></p>
+                        </div>
+                        
+                        <p><input class="w3-input w3-border w3-padding-16" id="Answer" data-bind="value: answer"></p>
+                        <p>
+                            <button class="w3-btn w3-teal w3-padding-small w3-hover-teal" id="submit-answer"> Submit</button>
+                            <button class="w3-btn w3-teal w3-padding-small w3-hover-teal" id="next">Skip</button>
+                        </p>
+                    </div>
+                </div>
+              <div class="w3-content w3-center w3-text-grey w3-xlarge" id ="score-container">
+                    <p class="w3-xlarge">Your Score:</p>
+                 <!--  <p> <span class="w3-text-green" id="correct">Correct <span class="correct-score"><input data-bind="value: correctScore"/></span></span></p>
+                  <p>  <span class="w3-text-red " id="incorrect">Incorrect <span class="incorrect-score"><input data-bind="value: incorrectScore"/></span></span></p>-->
+		<p> <span class="w3-text-green" id="correct">Correct <input data-bind="value: correctScore"/></span></p>
+                <p> <span class="w3-text-red " id="incorrect">Incorrect <input data-bind="value: incorrectScore"/></span></p>
+                
+                </div>
+        </main>
+
+    </body>
+</html>
