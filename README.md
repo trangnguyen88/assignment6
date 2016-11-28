@@ -10,6 +10,8 @@ CPSC 473 assignment 6
 - Redis
 - socket.io
 - Knockout
+
+
 ## Installation:
  1.- Type in Terminal: npm install  to install all of the dependencies
 
