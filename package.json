@@ -1,7 +1,7 @@
 {
-  "name": "Assignment 5",
+  "name": "Assignment 6",
   "version": "1.0.0",
-  "description": "Assignment 5",
+  "description": "Assignment 6",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
 	"repository": {
         "type": "git",
-        "url": "git+https://github.com/trangnguyen88/assignment-5"
+        "url": "git+https://github.com/trangnguyen88/assignment-6"
     },
     "author": "",
   "license": "ISC",
